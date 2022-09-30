@@ -1,4 +1,4 @@
-defmodule DaisyUI.Component.Card do
+defmodule PhoenixComponentsDaisy.Card do
   use Phoenix.Component
 
   @doc """
