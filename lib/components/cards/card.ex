@@ -3,9 +3,8 @@ defmodule PhoenixComponentsDaisy.Card do
 
   @doc """
   https://daisyui.com/components/card/#card
-  
-  """
 
+  """
 
   def static(assigns) do
     ~H"""
@@ -22,16 +21,16 @@ defmodule PhoenixComponentsDaisy.Card do
     """
   end
 
-  attr :card_image_url, :string, default: "https://placeimg.com/400/225/arch"
-  attr :card_image_alt, :string, default: "Shoes"  
-  attr :card_title, :string, default: "Shoes!"  
-  attr :card_body, :string, default: "If a dog chews shoes whose shoes does he choose?"  
-  attr :card_action, :string, default: "Buy Now"  
+  attr(:card_image_url, :string, default: "https://placeimg.com/400/225/arch")
+  attr(:card_image_alt, :string, default: "Shoes")
+  attr(:card_title, :string, default: "Shoes!")
+  attr(:card_body, :string, default: "If a dog chews shoes whose shoes does he choose?")
+  attr(:card_action, :string, default: "Buy Now")
 
   def dynamic(assigns) do
     ~H"""
     <div class="card card-compact w-96 bg-base-100 shadow-xl">
-    <figure><img src="{@card_image_url}" alt="{@card_image_alt}" /></figure>
+    <figure><img src={@card_image_url} alt={@card_image_alt} /></figure>
     <div class="card-body">
     <h2 class="card-title"><%= @card_title %></h2>
     <p><%= @card_body %></p>
@@ -42,7 +41,4 @@ defmodule PhoenixComponentsDaisy.Card do
     </div>
     """
   end
-
-
-
 end
