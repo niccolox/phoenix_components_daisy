@@ -54,7 +54,7 @@ defmodule PhoenixComponentsDaisy.MixProject do
       #       {:postgrex, ">= 0.0.0"},
       #       {:phoenix_html, "~> 3.0"},
       #       {:phoenix_live_reload, "~> 1.2", only: :dev},
-             {:phoenix_live_view, "~> 0.18"},
+            {:phoenix_live_view, "~> 0.18.1"},
       #       {:phoenix_components_daisy, "lib/phoenix_components_daisy"},      
       #       {:heroicons, "~> 0.5"},
       #       {:floki, ">= 0.30.0", only: :test},
