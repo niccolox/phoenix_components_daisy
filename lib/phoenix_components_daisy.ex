@@ -1,4 +1,5 @@
 defmodule PhoenixComponentsDaisy do
+  use Phoenix.Component
   @moduledoc """
   Documentation for `PhoenixComponentsDaisy`.
   """
